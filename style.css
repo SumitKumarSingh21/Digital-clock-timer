@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    background: linear-gradient(135deg, #6cc177 0%, #6eb997 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+}
+
+/* Container and headings */
+.container {
+    margin-top: 60px;
+    background: rgba(55, 43, 43, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 40px 30px;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f8f9fa;
+}
+
+/* Nav tabs */
+.nav-tabs .nav-link {
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    margin: 0 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-tabs .nav-link.active {
+    background: #90c7ab;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    font-weight: bold;
+}
+
+/* Clock display */
+.clock-display, #countdown-display, #stopwatch-display {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 24px 0;
+    margin: 0 auto;
+    width: 60%;
+    color: #f8f9fa;
+    letter-spacing: 3px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.15);
+}
+
+/* Inputs and buttons */
+input[type="number"] {
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 16px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+input[type="number"]::placeholder {
+    color: #d1d1d1;
+}
+
+.btn {
+    min-width: 120px;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin: 0 6px 8px 6px;
+    box-shadow: 0 2px 6px rgba(44, 62, 80, 0.10);
+    transition: transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 8px;
+    }
+    .clock-display, #countdown-display, #stopwatch-display {
+        font-size: 2rem;
+        width: 100%;
+        padding: 16px 0;
+    }
+}
